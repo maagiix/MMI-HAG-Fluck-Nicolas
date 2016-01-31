@@ -1,0 +1,88 @@
+
+a{
+
+    text-decoration: none;
+}
+
+header a:link{
+    font-size: 0.7em;
+    font-family: 'open_sansregular';
+    color: #7e7e7e;
+}
+
+.wrap{
+    margin: 0 auto;
+    width: 70%;
+}
+
+header{
+    background-color: #242424;
+    float: left;
+    width: 100%;
+}
+
+.titre{
+    font-family: 'open_sanssemibold';
+    float: left;
+    color: #57c5a0;
+}
+
+.search, .register{
+    float: right;
+}
+
+.register{
+    border-left: 1px solid #7e7e7e;
+    border-right: 1px solid #7e7e7e;
+    height:50px;
+}
+
+
+header::after{
+    content:"";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .bulle4{
+    position: relative;
+    margin-top: -20%;
+    padding: 5% 0;
+    text-align: center;
+    color: #FFF;
+    font-family:Pathway Gothic one, sans-serif;
+    font-size: 110%;
+    z-index: 1555;
+    width:0%;
+    overflow:hidden;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+
+} */
