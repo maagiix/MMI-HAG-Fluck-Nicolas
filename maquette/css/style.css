@@ -238,13 +238,55 @@ h2{
 }
 
 .nav-slider{
-    display: inline-block;
-
+    display: flex;
+    justify-content: center;
+    
+    font-family: 'open_sansregular';
 }
 
-.nav-slider ul li{
-    display: inline-block;
+.text-brand{
+    padding: 1em 1em;
+    color: #979797;
+    width: 150px;
+    text-align: center;
 }
+
+.text-brand p{
+    color: #6e6e6e;
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+
+.trait hr{
+
+    border: 3px solid #000;
+}
+
+.brand1{
+    margin-bottom: 10px;
+}
+
+.brand1:hover{
+    cursor: pointer;
+    color: #FFF;
+}
+.brand2:hover{
+    cursor: pointer;
+    color: #FFF;
+}
+.brand3:hover{
+    cursor: pointer;
+    color: #FFF;
+}
+.brand4:hover{
+    cursor: pointer;
+    color: #FFF;
+}
+.brand5:hover{
+    cursor: pointer;
+    color: #FFF;
+}
+
 
 
 
