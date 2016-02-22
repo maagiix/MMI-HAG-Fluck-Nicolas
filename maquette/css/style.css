@@ -202,6 +202,10 @@ nav ul li a{
     background-color: #57c5a0;
 }
 
+.orange{
+    background-color: #f27e4b;
+}
+
 
 h2{
     font-family: 'open_sansregular';
@@ -229,9 +233,6 @@ h2{
     color: #57c5a0;
 }
 
-/*********************** FIN DU SLIDER ***********************/
-
-
 
 .brand{
     background-color: #2e2e2e;
@@ -256,14 +257,28 @@ h2{
     font-size: 0.7em;
     margin-top: 5px;
 }
-
 .trait hr{
 
     border: 3px solid #000;
+
+
+}
+
+.highlight hr{
+    border: 3px solid #57c5a0;
+}
+
+.right {
+    border-right: 1px solid #7e7e7e;
 }
 
 .brand1{
     margin-bottom: 10px;
+}
+
+.text-brand:hover{
+    cursor: pointer;
+    color: #FFF;
 }
 
 .brand1:hover{
@@ -287,36 +302,336 @@ h2{
     color: #FFF;
 }
 
+/*********************** FIN DU SLIDER ***********************/
+
+
+.vignettes{
+    background-color: #242424;
+
+}
+
+.vignette{
+    margin: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 158px;
+}
+
+.vignette-gauche{
+    background-image: url('../img/onsale.png');
+
+}
+
+.vignette-milieu{
+    background-image: url('../img/specialoffers.png');
+
+}
+.vignette-droite{
+    background-image: url('../img/musthave.png');
+}
+
+.text-vignette{
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 1.2em;
+    color: #FFF;
+}
+
+.vignette:hover{
+    cursor: pointer;
+}
+
+/******************** FIN DES VIGNETTES *************************/
+
+.arrivals{
+    background-color: #ebe7df;
+    font-family: 'open_sansregular';
+}
 
 
 
+.titre-show{
+    padding: 20px 0;
+    clear: both;
+}
+
+.titre-show h4{
+    float: left;
+    font-size: 1.4em;
+}
+
+.show{
+    font-family: 'open_sanssemibold';
+    float: right;
+    border: 1px solid #c9c2b6;
+    color: #c9c2b6;
+    border-radius: 1px;
+    padding: 10px 20px;
+    font-size: 0.8em;
+}
+
+.photos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    margin: 1em;
+    width: 300px;
+    background-color: #FFF;
+   position: relative;
+   overflow-x: hidden;
+}
+
+.marque{
+    border-top: 2px solid #c9c2b6;
+    background-color: #FFF;
+    height: 50px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.marque p{
+    font-family: 'open_sansregular';
+    font-size: 1.1em;
+    line-height: 50px;
+}
+
+.img__text{
+    clear: both;
+    width: 100%;
+}
+.prix-image{
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    z-index: 1321313;
+}
+
+.sale-image{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #57c5a0;
+  color: white;
+  border: 1px solid #57c5a0;
+}
 
 
 
+.bulle4{
 
-
-
-
-
-
-
-
-
-
-/* .bulle4{
-    position: relative;
-    margin-top: -20%;
-    padding: 5% 0;
+    border-top: 2px solid #c9c2b6;
+    margin-top: -50px;
+    position: absolute;
+    background-color: #FFF;
+    bottom: 0;
+    left: 0;
     text-align: center;
     color: #FFF;
     font-family:Pathway Gothic one, sans-serif;
     font-size: 110%;
-    z-index: 1555;
     width:0%;
     overflow:hidden;
+    display: inline-block;
     -webkit-transition: width 0.5s ease-in-out;
     -moz-transition: width 0.5s ease-in-out;
     -o-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
+    height: 50px;
+    padding-left: 20px;
 
-} */
+
+} 
+
+.bulle4 li{
+    display: inline-block;
+    line-height: 50px;
+    font-size: 0.8em;
+    margin: 0 10px;
+}
+
+.bulle4 a:hover *{
+    color: #57c5a0;
+}
+
+.marque:hover .bulle4{
+    width: 100%;
+}
+
+/************************** FIN DES ARRIVALS ******************************/
+
+.hr{
+border: 1px solid rgba(126,126,126,0.5);
+}
+
+.blog{
+    width: 100%;
+    display: inline-block;
+}
+
+.shipping{
+    width: 165px;
+    height: 190px;
+    background-color: #dfdbd4;
+     float: left;
+     margin: 1em 1em 1em 0;
+   }
+
+.testimonials{
+    width: 165px;
+    height: 190px;
+    background-color: #dfdbd4;
+   float: left;
+   margin: 1em 2em;
+
+}
+
+.news{
+
+    height: 190px;
+    background-color: #dfdbd4;
+   float: right;
+   margin: 1em 0 1em 1em;
+}
+
+h5{
+    font-family: 'open_sanssemibold';
+    padding-bottom: 10px;
+}
+
+.blog__p{
+    font-size: 0.9em;
+}
+
+.padding{
+    padding: 20px;
+    font-size: 0.8em;
+}
+
+.padding p{
+    line-height: 15px;
+}
+
+.what, .nice{
+    clear: both;
+}
+
+.date-number, .date{
+    float: left;
+    margin: 10px 5px;
+}
+
+.date-number{
+    font-size: 0.8em;
+    text-align: center;
+    color: #FFF;
+    background-color: #57c5a0;
+    padding: 5px 10px;
+}
+
+.date{
+    padding-top: 5px;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+
+
+/********************* FIN DU BLOG ************************/
+
+.wrapper{
+    margin: 0 auto;
+    width: 55%;
+}
+
+.footer{
+    background-color: #242424;
+    color: #7d7d7d;
+}
+
+.widget{
+    clear: both;
+    overflow: hidden;
+    padding: 20px 0;
+    font-family: 'open_sansregular';
+    line-height: 20px;
+}
+
+.widget h5{
+    font-size: 0.9em;
+}
+
+.widget p{
+    font-size: 0.7em;
+    margin-bottom: 10px;
+}
+
+.text_widget{
+    float: left;
+    width: 30%;
+    text-align: justify;
+    margin: 20px 0 20px 0;
+    padding-right: 20px;
+
+}
+
+
+.twitter_widget{
+    float: left;
+    width: 30%;
+    margin: 20px 18px 20px 18px;
+}
+
+.hashtag{
+    color: #57c5a0;
+}
+
+.flickr_widget{
+    float: left;
+    width: 33%;
+    margin-top: 20px;
+
+}
+
+.images{
+    clear: both;
+}
+
+.liste1 li{
+    float: left;
+    margin: 2px;
+}
+
+.liste2 li{
+    float: left;
+    margin: 2px;
+}
