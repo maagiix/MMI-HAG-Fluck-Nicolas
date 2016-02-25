@@ -264,6 +264,29 @@ h2{
 
 }
 
+
+.brand1:hover > .trait hr{
+    border: 3px solid #57c5a0;
+}
+
+.brand2:hover > .trait hr{
+    border: 3px solid #57c5a0;
+}
+
+.brand3:hover > .trait hr{
+    border: 3px solid #57c5a0;
+}
+
+.brand4:hover > .trait hr{
+    border: 3px solid #57c5a0;
+}
+
+.brand5:hover > .trait hr{
+    border: 3px solid #57c5a0;
+}
+
+
+
 .highlight hr{
     border: 3px solid #57c5a0;
 }
@@ -481,7 +504,7 @@ h2{
     color: #57c5a0;
 }
 
-.marque:hover .bulle4{
+.img:hover .img__text .marque .bulle4{
     width: 100%;
 }
 
@@ -629,9 +652,96 @@ h5{
 .liste1 li{
     float: left;
     margin: 2px;
+
 }
 
 .liste2 li{
     float: left;
     margin: 2px;
+}
+
+input[type="text"]{
+    background-color: #2e2e2e;
+    width: 75%;
+    border: none;
+    height: 33px;
+    color: #7d7d7d;
+    font-style: italic;
+    text-align: center;
+    
+}
+.bas{
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.newsletter{
+    width: 33%;
+    float: left;
+}
+
+.fa-chevron-right{
+    color: #2e2e2e;
+    font-size: 0.9em;
+
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: #7d7d7d;
+    height: 35px;
+    width: 40px;
+    color: #2e2e2e;
+}
+
+.social{
+    float: right;
+    display: inline-block;
+    width: 33%;
+
+}
+.social li{
+    display: inline-block;
+    background-color: #2e2e2e;
+    padding: 10px;
+}
+
+.social a:hover *{
+    color: #57c5a0;
+}
+.gris{
+    background-color:#2e2e2e;
+}
+
+
+/*************************** FIN DU PREMIER FOOTER ****************************/
+
+footer{
+    background-color: #2e2e2e;
+    height: 70px;
+    color: #7d7d7d;
+    font-family: 'open_sansregular';
+    padding-top: 50px;
+    font-size: 0.9em;
+}
+
+.copyright{
+    width: 50%;
+    float: left;
+    line-height: 20px;
+}
+
+.link{
+    float: left;
+
+}
+
+.link a{
+    color: #7d7d7d;
+}
+
+.link a:hover{
+    color: #57c5a0;
 }

@@ -1,0 +1,106 @@
+.mainContainer{
+cursor: default;
+/*overflow: hidden;*/
+-webkit-user-select: none;
+position: absolute;
+margin: 50px auto;
+}
+
+.firstChild{
+width: 200px;
+height: 50px;
+line-height: 50px;
+background-color: blue;
+text-align: center;
+
+transition: all 0.3s;
+}
+
+.secondChild{
+width: 200px;
+height: 50px;
+line-height: 50px;
+background-color: #7BCC80;
+text-align: center;
+position: absolute;
+left: 0;
+top: 0;
+z-index: -1;
+transform: rotateY(-180deg);
+transition: all 0.3s;
+
+}
+.mainContainer:hover > .firstChild{
+	transform: rotateY(180deg);
+}
+.mainContainer:hover > .secondChild{
+	z-index: 1;
+	transform: rotateY(0deg);
+}
+
+
+ul{
+	display: flex;
+	width: 600px;
+	height: 50px;
+	margin: 0;
+	padding-top: 200px;
+	
+
+}
+
+li{
+	flex: 1;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	background-color: blue;
+	color: #FFF;
+	border: 1px solid red;
+	cursor: pointer;
+
+}
+
+
+
+@keyframes bounceTop{
+	0%, 100%{
+		top: 0;
+	}
+	50%{
+		top: -20px;
+	}
+}
+
+@keyframes bounceRight{
+	0%, 100%{
+		top: 0;
+	}
+	50%{
+		top: -20px;
+	}
+}
+.bouncing{
+	margin-top: 200px;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	position: relative;
+}
+.bounceTop{
+	margin-top: 200px;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	position: relative;
+	animation: bounce 2s infinite;
+}
+
+.bounceRight{
+	margin-top: 200px;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	position: relative;
+	animation: bounce 2s infinite;
+}
