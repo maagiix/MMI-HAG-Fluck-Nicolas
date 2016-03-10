@@ -10,7 +10,6 @@
 
 header{
     background-color: #242424;
-    float: left;
     width: 100%;
 }
 
@@ -61,14 +60,22 @@ header{
 }
 
 
-header::after{
-    content:"";
-}
-
 
 /****************** FIN DU HEADER ***************************/
 nav{
     display: inline-block;
+    overflow: hidden;
+    height:60px;
+}
+
+.clearfix:after{
+    display:block;
+    content:'';
+    clear:both;
+}
+
+.dim{
+    height:60px;
 }
 
 nav ul{
@@ -77,14 +84,9 @@ nav ul{
  font-size: 1em;
 }
 
-nav .starbasket{
-    font-family:'open_sansregular';
-    font-size: 0.8em;
-}
-
-
 nav ul li {
-    display: inline-block;
+   /*  display: inline-block; */
+   float:left;
     border-left: 1px solid rgba(126,126,126,0.5);
     height: 60px;
 }
@@ -102,6 +104,10 @@ nav ul li:nth-child(6){
 nav ul li a{
     color: #242424;
     line-height: 60px;
+}
+
+.active{
+    border-bottom: 4px solid #57c5a0;
 }
 
 
@@ -241,7 +247,6 @@ h2{
 .nav-slider{
     display: flex;
     justify-content: center;
-    
     font-family: 'open_sansregular';
 }
 
@@ -341,6 +346,7 @@ h2{
     width: 280px;
     height: 158px;
 }
+
 
 .vignette-gauche{
     background-image: url('../img/onsale.png');
@@ -714,7 +720,6 @@ button{
 .gris{
     background-color:#2e2e2e;
 }
-
 
 /*************************** FIN DU PREMIER FOOTER ****************************/
 

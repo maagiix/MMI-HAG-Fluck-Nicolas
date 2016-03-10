@@ -1,13 +1,31 @@
 $(document).ready(function() {
-   $('.item1').on('click', function(){
-      $('.key').children.deleteClass('bouncing');
-      $('.key').children.addClass('bounceRight');
-      $('.key').children.deleteClass('bounceTop');
-   });
+  var a = $('.margin a');
+   var li = $('#menu').children();
 
-    $('.item2').on('click', function(){
-    	$('.key').children.deleteClass('bouncing');
-      $('key').children.addClass('bounceTop');
-      $('.key').children.deleteClass('bounceRight');
-   });
+   a.on('click', function(){
+
+      li.removeClass("active");
+
+        $(this).parent().parent().addClass("active");
+   })
+
 });
+
+
+
+/*var menu = document.getElementById('menu');
+var li = menu.childNodes;
+
+function active(item){
+
+  console.log(li.getAttribute('class'));
+
+  
+   menu.childNodes.className = document.getElementById("active").className.replace( /(?:^|\s)active(?!\S)/g , "" );
+  
+
+ 
+
+  item.parentNodes.parentNodes.className = "active";
+
+}*/
