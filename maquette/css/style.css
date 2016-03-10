@@ -5,7 +5,7 @@
 
 .wrap{
     margin: 0 auto;
-    width : 60%;
+    width : 960px;
 }
 
 header{
@@ -413,7 +413,7 @@ h2{
     width: 300px;
     background-color: #FFF;
    position: relative;
-   overflow-x: hidden;
+   overflow: hidden;
 }
 
 .marque{
@@ -494,7 +494,7 @@ h2{
     -o-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
     height: 50px;
-    padding-left: 20px;
+    padding-left: 60px;
 
 
 } 

@@ -1,31 +1,14 @@
-$(document).ready(function() {
-  var a = $('.margin a');
-   var li = $('#menu').children();
+var selector, elems, makeActive;
+selector='.menu li';
+elems=document.querySelectorAll(selector);
+makeActive=function (){
+	for (var i=0; i < elems.length; i++)
+	 elems[i].classList.remove('active');
+	this.classList.add('active');
+	};
 
-   a.on('click', function(){
+	for (var i=0; i < elems.length; i++)
+	 elems[i].addEventListener('mousedown', makeActive);
 
-      li.removeClass("active");
-
-        $(this).parent().parent().addClass("active");
-   })
-
-});
-
-
-
-/*var menu = document.getElementById('menu');
-var li = menu.childNodes;
-
-function active(item){
-
-  console.log(li.getAttribute('class'));
-
-  
-   menu.childNodes.className = document.getElementById("active").className.replace( /(?:^|\s)active(?!\S)/g , "" );
-  
-
- 
-
-  item.parentNodes.parentNodes.className = "active";
-
-}*/
+    
+    
